@@ -11,7 +11,27 @@ This is a simple KnockoutJS application demonstrating basic MVVM (Model-View-Vie
 
 ## How to Run
 
-Simply open `index.html` in a web browser. No build process or server required!
+### Using Python 3 (recommended)
+
+1. Open a terminal and go to the project folder:
+   ```bash
+   cd path/to/knockoutjs
+   ```
+2. Start the built-in HTTP server:
+   ```bash
+   python3 -m http.server 8000
+   ```
+3. Open a browser and visit:
+   ```
+   http://localhost:8000
+   ```
+4. To stop the server, press `Ctrl+C` in the terminal.
+
+You can use a different port if 8000 is in use (e.g. `python3 -m http.server 3000`, then visit `http://localhost:3000`).
+
+### Without a server
+
+You can also open `index.html` directly in a browser (double-click or drag into the browser). The app uses inline script, so it will run; for development, using the Python server above is recommended.
 
 ## What's Demonstrated
 
