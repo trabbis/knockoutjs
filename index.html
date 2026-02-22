@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple KnockoutJS Example</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-min.js"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -125,6 +124,7 @@
         </div>
     </div>
 
+    <script src="knockout-min.js"></script>
     <script>
         // ViewModel for the KnockoutJS application
         function AppViewModel() {
@@ -157,7 +157,9 @@
                 return true;
             };
         }
-        ko.applyBindings(new AppViewModel());
+        if (typeof ko !== "undefined") {
+            ko.applyBindings(new AppViewModel());
+        }
     </script>
 </body>
 </html>
